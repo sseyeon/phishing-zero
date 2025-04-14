@@ -1,0 +1,27 @@
+# macOS
+.DS_Store
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# JetBrains IDE
+.idea/
+
+# Node.js / React Native
+phishing-zero-app/node_modules/
+phishing-zero-app/.expo/
+phishing-zero-app/.expo-shared/
+phishing-zero-app/.env
+phishing-zero-app/dist/
+phishing-zero-app/build/
+
+# Logs
+*.log
+
+# Expo
+*.turtle*
+
+# Optional: VSCode
+.vscode/
