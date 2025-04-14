@@ -16,7 +16,7 @@ def get_dong_data():
 
 @app.route("/api/dong/<dong_name>", methods=["GET"])
 def get_dong_detail(dong_name):
-    dong = next((item for item in data if item["행정동_명"] == dong_name), None)
+    dong = next((item for item in data if item["dongName"] == dong_name), None)
     if dong:
         return jsonify(dong)
     else:
