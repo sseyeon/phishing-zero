@@ -4,7 +4,7 @@ import json
 
 # 피해 + 좌표 데이터 불러오기
 df = pd.read_csv('../data/seoul_dong_with_damage.csv')
-df['피해건수'] = df['피해건수'].fillna(0)
+df['caseCount'] = df['피해건수'].fillna(0)
 df['score'] = df['score'].fillna(0)
 
 # 지도 생성
@@ -42,7 +42,7 @@ def get_color(score):
 # GeoJSON 스타일 함수
 def style_function(feature):
     dong = feature['properties']['adm_nm'].split()[-1]
-    row = df[df['행정동_명'] == dong]
+    row = df[df['dongName'] == dong]
     score = row['score'].values[0] if not row.empty else 0
     return {
         'fillOpacity': 0.7,
