@@ -48,7 +48,7 @@ export default function MapViewContainer({ style }: { style?: any }) {
 
 const styles = StyleSheet.create({
     container: {
-        height: 250,
+        height: 300,
         borderRadius: 16,
         overflow: 'hidden',
         borderWidth: 1,

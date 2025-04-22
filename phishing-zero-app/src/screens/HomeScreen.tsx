@@ -61,6 +61,9 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         marginBottom: 16,
     },
+    mapContainer: {
+        height:300
+    },
     mapImage: {
         width: '100%',
         height: 250,
