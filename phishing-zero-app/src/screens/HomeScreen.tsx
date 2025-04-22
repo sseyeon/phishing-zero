@@ -5,7 +5,7 @@ import MapViewContainer from "@/src/components/MapViewContainer";
 
 export default function HomeScreen() {
     return (
-        <ScrollView style={styles.container}>
+        <View style={styles.container}>
             <Text style={styles.title}>보이스피싱 위험지도</Text>
 
             <View style={styles.mapContainer}>
@@ -45,7 +45,7 @@ export default function HomeScreen() {
                 <Text style={styles.toggleLabel}>위험 지역 진입 시 알림 받기</Text>
                 <Switch value={true} thumbColor="#ffffff" trackColor={{ true: '#1d4ed8' }} />
             </View>
-        </ScrollView>
+        </View>
     );
 }
 const styles = StyleSheet.create({
@@ -61,12 +61,6 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         marginBottom: 16,
     },
-    // mapContainer: {
-    //     borderRadius: 16,
-    //     overflow: 'hidden',
-    //     borderWidth: 1,
-    //     borderColor: '#ddd',
-    // },
     mapImage: {
         width: '100%',
         height: 250,
